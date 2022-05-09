@@ -83,12 +83,12 @@ for (let i = 0; i < engLayout.symbols.length; i += 1) {
         continue;
     } else if (engLayout.symbols[i] === 'right') {
         key.classList.add('key-right');
-        key.innerHTML = '<img src="../img/slider-arrow-right.svg">';
+        key.innerHTML = '<img src="./img/slider-arrow-right.svg">';
         keyRow5.push(key);
         continue;
     } else if (engLayout.symbols[i] === 'left') {
         key.classList.add('key-left');
-        key.innerHTML = '<img src="../img/slider-arrow-left.svg">';
+        key.innerHTML = '<img src="./img/slider-arrow-left.svg">';
         keyRow5.push(key);
         continue;
     } else if (engLayout.symbols[i] === 'up/down') {
@@ -97,13 +97,13 @@ for (let i = 0; i < engLayout.symbols.length; i += 1) {
         let upKey = document.createElement('div');
         upKey.className = 'keys';
         upKey.classList.add('two');
-        upKey.innerHTML = '<img src="../img/slider-arrow-left.svg">';
+        upKey.innerHTML = '<img src="./img/slider-arrow-left.svg">';
         keys.push(upKey);
 
         let downKey = document.createElement('div');
         downKey.className = 'keys';
         downKey.classList.add('two');
-        downKey.innerHTML = '<img src="../img/slider-arrow-right.svg">';
+        downKey.innerHTML = '<img src="./img/slider-arrow-right.svg">';
 
         keys.push(downKey);
         key.append(...keys);
